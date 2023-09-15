@@ -1,0 +1,82 @@
+/*loaderDiv for fullscreen*/
+div.loaderDiv {
+    text-align: center;
+    z-index: 11111111;
+    position: fixed;
+    width: 100%;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    background: #101903;
+    opacity: 0.4;
+    height: 100%;
+    transition: all 2s ease;
+}
+
+div.loaderDiv img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+     transition: all 2s ease;
+}
+
+div.noDataFoundDiv {
+    text-align: center;
+}
+div.noDataFoundDiv img {
+    width: 400px;
+    height: 400px;
+}
+/*loaderDiv for fullscreen*/
+
+
+/*loader div and image  for data update */
+
+
+.UploaderDiv {
+    background: #4917c3;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    opacity: 0.6;
+    width: 100%;
+}
+
+.UploaderDiv img {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 0px;
+}
+
+.UpNotfoundDiv {
+    background: #1341c859;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+.UpNotfoundDiv img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+/*loader div and image  for data update */

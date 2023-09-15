@@ -1,0 +1,92 @@
+body {
+    background: #eaeaea91;
+}
+/*home page css start form here*/
+header#header {
+    box-shadow: 1px 7px 9px -1px #b9b9b9;
+    background: white;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    padding: 10px;
+}
+div.collumnLeft nav {
+    display: flex;
+    height: 100%;
+}
+div.collumnLeft nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+div.collumnLeft nav ul li {
+    font-size: 20px;
+    list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.collumnLeft nav ul a {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*home page css end form here*/
+
+
+/*login page css start form here*/
+div.loginRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.loginRow  div div.card {
+    box-shadow: inset 0px 0px 8px 7px greenyellow;
+    padding: 25px;
+}
+.create {
+    background: linear-gradient(90deg, rgb(174 120 210 / 97%) 16%, rgb(234 61 61) 66%, rgba(252,176,69,1) 100%);
+    font-weight: bold;
+    color: white;
+}
+.create:hover{
+     background: linear-gradient(90deg,rgba(252,176,69,1) 16%,rgb(234 61 61) 66%,rgb(174 120 210 / 97%) 100%);
+     color: black;
+}
+div.others.float-center{
+    text-align: center;
+}
+div.others.float-center span a {
+    text-decoration: none;
+    font-weight: bold;
+}
+/*login page css start form here*/
+/*register page css start form here*/
+div.registerContent {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 99vh;
+}
+label{
+    font-weight: bold;
+}
+div.registerContent div div.card div.card-body div.registerForm form div.row div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+div.registerContent div div.card div.card-body div.cardHeadingRow {
+    display: flex;
+    align-items: center;
+}
+div.registerContent div div.card div.card-body div.cardHeadingRow img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-left: auto;
+}
+/*register page css start form here*/

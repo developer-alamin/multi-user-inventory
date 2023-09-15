@@ -1,0 +1,283 @@
+/*dashboard css start form here*/
+ul.navbar-nav.ms-auto.ms-md-0.me-3.me-lg-4 li a img.profileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+div.dashboardContent div.row div div.card img.dashCardImg {
+    width: 75px;
+    height: 64px;
+    border-radius: 5px 0px 0px 5px;
+}
+div.dashboardContent div div div.card.flex-row {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    animation-name: panel;
+    animation-duration: 1.5s;
+    transition: all 0.6s ease-in;
+
+}
+@keyframes panel{
+    0%{
+        margin-top: 40px;
+        opacity: 0.2;
+        transition: all 0.6s ease-in;
+    }
+    100%{
+         margin-top: 7px;
+         margin-bottom: 7px;
+        transition: all 0.6s ease-in;
+    }
+
+}
+div.dashboardContent div div div.card.flex-row div.card-body {
+    padding: 0;
+    text-align: center;
+    margin-top: auto;
+}
+div.dashboardContent div div div.card.flex-row div.card-body p {
+    margin: auto;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/*dashboard css end form here*/
+
+/*all page css start form here*/
+.fa-eye{
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+.viewBtn {
+    border: 2px solid yellowgreen;
+    font-weight: bold;
+    color: #022dff;
+}
+
+.viewBtn:hover {
+    background: yellowgreen;
+    color: #022dff;
+    border: 2px solid cyan;
+}
+th.paidTh{
+    text-align: right;
+}
+tbody.salProTbody tr.trRow td input {
+    cursor: not-allowed;
+    border: 1px solid #073bff;
+    background: #f7f8ff;
+    border-radius: 4px;
+}
+p.deactive {
+    background: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+p.active {
+    background: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+label{
+    font-weight: bolder;
+}
+div.form-group div{
+    margin-top: 5px;
+}
+
+td.actionTd {
+    text-align: center;
+}
+button.cencel {
+    background: repeating-linear-gradient(45deg, #ff1c1c, #ff0f0f7a 100px);
+    color: white;
+    font-weight: bold;
+}
+.toast.toast-error {
+    color: white !important;
+    font-weight: bold;
+    width: 300px !important;
+    background: #ff0808;
+}
+.toast.toast-success {
+    color: white !important;
+    font-weight: bold;
+    opacity: 1 !important;
+    width: 300px !important;
+    background: green;
+}
+
+#toast-container>.toast-error{
+    background-image: none !important;
+}
+/*all page css end form here*/
+
+
+nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark a.navbar-brand {
+    color: black;
+    font-family: inherit;
+    font-weight: bold;
+}
+nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark button#sidebarToggle {
+    color: blue !important;
+    font-size: 30px;
+    font-family: cursive;
+}
+nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark ul.navbar-nav.ms-auto.ms-md-0.me-3.me-lg-4 {
+    display: inline-block !important;
+    width: 100%;
+    text-align: right;
+}
+nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark ul.navbar-nav li a#navbarDropdown {
+    color: #0a00ff;
+}
+div.sb-sidenav-menu div.nav a.nav-link div.sb-nav-link-icon {
+    color: #271bb4 !important;
+}
+div.sb-sidenav-menu div.nav a.nav-link {
+    color: #1167de !important;
+}
+div#layoutSidenav div#layoutSidenav_nav nav#sidenavAccordion div.sb-sidenav-menu div.nav div.collapse:hover {
+    background: repeating-linear-gradient(14deg, #00f430, #e2dcda 100px);
+    color: white;
+    width: 100%;
+    border-left: 5px solid #ff0032;
+    transition: all 0.3s cubic-bezier(0.55, 0.59, 0.57, 0.81);
+}
+nav.sb-sidenav-dark div.sb-sidenav-menu a.nav-link div.sb-sidenav-collapse-arrow {
+    color: #0056ff !important;
+}
+
+/*customer css start form here*/
+
+div.customerContentDiv div.card div.card-body div.customerRow {
+    display: flex;
+    align-items: center;
+}
+/*customer css end form here*/
+/*something common css start form here*/
+.create {
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(230 98 51) 18%, rgb(158 68 234) 100%);
+    margin-left: auto;
+    color: white;
+}
+
+td.actionTd button.editBtn {
+    color: #34b60f;
+    font-weight: bold;
+    border: 2px solid rgb(76 211 37);
+}
+td.actionTd button.editBtn:hover{
+    color: white;
+    background: repeating-linear-gradient(45deg, #03c800, white 100px);
+}
+td.actionTd button.btn.deleteBtn {
+    border: 2px solid #ff4545;
+    color: #ff5757;
+    font-weight: bold;
+}
+td.actionTd button.btn.deleteBtn:hover {
+    border: 2px solid #ff9321;
+    background: repeating-linear-gradient(45deg, #f42266, #fff900c4 100px);
+    color: white;
+    font-weight: bold;
+}
+button.btn.successBtn {
+    background: repeating-linear-gradient(45deg, #009b18, #0ed947 100px);
+    font-weight: bold;
+    color: white;
+}
+thead.thead {
+    background: #630bdc;
+}
+
+thead.thead tr th {
+    color: white !important;
+    font-weight: bold;
+    font-size: 17px;
+    text-align:center !important;
+}
+/*something common css start form here*/
+/*product css start forn here*/
+
+tbody.productTbody tr td button:last-child{
+   width: 100%;
+   
+}
+tbody.productTbody tr td button:first-child{
+   width: 100%;
+   margin-bottom: 2px;
+}
+form#creProdForm div.modal-body .form-row {
+    display: flex;
+    margin-top: 5px;
+}
+
+form#creProdForm div.modal-body .form-row div {
+    margin-right: auto;
+}
+form#productUpForn div.modal-body .form-row {
+    display: flex;
+    margin-top: 5px;
+}
+
+form#productUpForn div.modal-body .form-row div {
+    margin-right: auto;
+}
+td.productTdImg img{
+    width: 70px;
+    height: 70px;
+}
+/*product css end form here*/
+/*invoice css start form here*/
+div.invoceContentDiv div.card div.card-body div.ionvoiceHeader {
+    display: flex;
+    align-items: center;
+}
+div.InvBilledDiv{
+    display: flex;
+}
+div.InvBilledDiv div.InvColDiv{
+   margin-left: auto;
+}
+/*invoice css end form here*/
+/*report page css start form here*/
+a.ui-datepicker-next.ui-corner-all {
+    background: #a2a2fc;
+}
+
+a.ui-datepicker-prev.ui-corner-all {
+    background: #a2a2fc;
+}
+/*report page css end form here*/
+/*profile page css start form here*/
+div.userInfo div.row div input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+div.profileContent div.row div div.card div.card-body div.proCardHeading {
+    display: flex;
+    align-items: center;
+}
+
+div.profileContent div.row div div.card div.card-body div.proCardHeading img {
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+}
+form#userProUpForm div.modal-body div.row div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modal-header.profileMH img {
+    width: 100px;
+    height: 100px;
+}
+/*profile page css end form here*/

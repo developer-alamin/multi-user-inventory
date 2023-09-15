@@ -1,0 +1,17 @@
+.toast.toast-error {
+    color: white !important;
+    font-weight: bold;
+    width: 300px !important;
+    background: #ff0808;
+}
+.toast.toast-success {
+    color: white !important;
+    font-weight: bold;
+    opacity: 1 !important;
+    width: 300px !important;
+    background: green;
+}
+
+#toast-container>.toast-error{
+    background-image: none !important;
+}
