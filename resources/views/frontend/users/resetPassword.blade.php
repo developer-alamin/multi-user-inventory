@@ -43,51 +43,6 @@
 <script type="text/javascript">
 	var url = "{{ route('users.passReset') }}";
 	passwordReset(url);
-	function passwordReset(url){
-		var passResetF = document.querySelector("#passResetForm");
-		passResetF.addEventListener("submit",function(e){
-			e.preventDefault();
-			var otp = passResetF["otp"];
-			var newPass = passResetF["newPass"];
-			var conPass = passResetF["conPass"];
-
-			if (otp.value == "") {
-				toastr.error("please otp Verify");
-			}else if (newPass.value == "") {
-				toastr.error("please New Password");
-			}else if (conPass.value == "") {
-				toastr.error("please Confirm Password");
-			}else if (conPass.value !== newPass.value) {
-				toastr.error("Not Match Confirm Password");
-			}else{
-
-				 removeClass(".ProgressContent","d-none");
-	       		 removeClass(".fullScreenDiv","d-none");
-
-				var data = new FormData(passResetF);
-				axios.post(url,data)
-				.then(function(response){
-					 addClass(".ProgressContent","d-none");
-	        		 addClass(".fullScreenDiv","d-none");
-					if (response.data["faild"]) {
-						toastr.error(response.data["faild"]);
-					}else{
-						toastr.success("Password Reset Success");
-						setTimeout(function(){
-			              window.location.href = "{{ route('web.login') }}";
-			            },1500);
-					}
-
-				})
-				.catch(function(error){
-					addClass(".ProgressContent","d-none");
-	        		addClass(".fullScreenDiv","d-none");
-					toastr.error("Request Faild");
-				})
-			}
-
-		});
-	}
 
 </script>
 @endsection()
