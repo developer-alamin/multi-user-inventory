@@ -45,48 +45,6 @@
 @section("script")
 <script type="text/javascript">
   signInFunc()
-  function signInFunc(){
-    var signForm = document.querySelector("#signFormId");
-    var email = document.querySelector(".email");
-    var password = document.querySelector(".password");
-    signForm.addEventListener("submit",function(e){
-      e.preventDefault();
-      if(email.value == "") {
-        toastr.error("Please Email");
-      }else if(password.value == ""){
-        toastr.error("Please Password");
-      }else{
-        removeClass(".ProgressContent","d-none");
-        removeClass(".fullScreenDiv","d-none");
-
-        var url = "/loginPost";
-        var data = new FormData(signForm);
-
-         axios.post(url,data)
-        .then(function(response){
-          addClass(".ProgressContent","d-none");
-          addClass(".fullScreenDiv","d-none");
-          if (response.data["email"]) {
-            toastr.error(response.data["email"]);
-          }else if(response.data["password"]){
-            toastr.error(response.data["password"]);
-          }else if(response.data["faild"]){
-            toastr.error(response.data["faild"]);
-          }else{
-           window.location.replace("/users/dashboard");
-            toastr.success(response.data["success"]);
-          }
-
-        })
-        .catch(function(error){
-          addClass(".ProgressContent","d-none");
-          addClass(".fullScreenDiv","d-none");
-          console.log(error)
-
-        })
-      }
-    })
-  }
 
 </script>
 @endsection

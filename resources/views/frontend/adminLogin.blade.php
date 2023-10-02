@@ -40,41 +40,9 @@
 @endsection()
 @section("script")
 <script type="text/javascript">
-	adminLogin();
-function adminLogin(){
+	var url = "{{ route('admin.adminPLogin') }}";
+	adminLogin(url);
 
-	var adminLogin = document.querySelector("#adminLoginForm");
-	adminLogin.addEventListener("submit",function(e){
-		e.preventDefault();
-		var email = adminLogin["email"];
-		var pass = adminLogin["password"];
-		if (email.value && pass.value !== "") {
-			removeClass(".ProgressContent","d-none");
-			removeClass(".fullScreenDiv","d-none");
 
-			var url = "{{ route('admin.adminPLogin') }}";
-			var data = new FormData(adminLogin);
-			axios.post(url,data)
-			.then(function(response){
-				addClass(".ProgressContent","d-none")
-				addClass(".fullScreenDiv","d-none")
-				if (response.data["faild"]) {
-					toastr.error(response.data["faild"]);
-				}else{
-					toastr.success(response.data["success"]);
-					window.open("/admin/dashboard","_SELF")
-				}
-			})
-			.catch(function(error){
-				addClass(".ProgressContent","d-none")
-				addClass(".fullScreenDiv","d-none")
-				toastr.error(response.data["faild"]);
-			})
-		}else{
-			toastr.error("Email And Password");
-		}
-
-	})
-}
 </script>
 @endsection()
