@@ -1,13 +1,6 @@
 @extends("frontend.layout.app")
 @section("title","Login Page")
 @section("content")
-<div class="ProgressContent d-none">
-  <div class="progress-bar">
-    <div class="progress-bar-value"></div>
-  </div>
-</div>
-<div class="fullScreenDiv d-none"></div>
-
 <div class="loginRow">
       <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
         <div class="card">
@@ -38,7 +31,7 @@
                 	</span>
                 	 |
                 	<span>
-                		<a href="">Forget Password</a>
+                		<a href="{{ route('users.sendOtp') }}">Forget Password</a>
                 	</span>
 
                 </div>
@@ -77,8 +70,10 @@
             toastr.error(response.data["email"]);
           }else if(response.data["password"]){
             toastr.error(response.data["password"]);
+          }else if(response.data["faild"]){
+            toastr.error(response.data["faild"]);
           }else{
-            window.location.replace("/users/dashboard");
+           window.location.replace("/users/dashboard");
             toastr.success(response.data["success"]);
           }
 

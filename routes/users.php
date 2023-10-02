@@ -9,8 +9,17 @@ use App\Http\Controllers\usersController\productController;
 use App\Http\Controllers\usersController\profileController;
 use App\Http\Controllers\usersController\reportController;
 use App\Http\Controllers\usersController\salesController;
+use App\Http\Controllers\usersController\SendController;
 use App\Http\Middleware\userMiddleware;
 use Illuminate\Support\Facades\Route;
+
+Route::group(["prefix" => "/users"], function () {
+	Route::match(["get", "post"], "/sendOtp", [SendController::class, "userSendOtp"])->name("users.sendOtp");
+
+	Route::match(["get", "post"], "/verifyOtp", [SendController::class, "verifyOtp"])->name("users.verifyOtp");
+
+	Route::match(["get", "post"], "/passReset", [SendController::class, "passReset"])->name("users.passReset");
+});
 
 Route::middleware([userMiddleware::class])->group(function () {
 	Route::group(['prefix' => '/users'], function () {

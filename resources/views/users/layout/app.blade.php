@@ -19,7 +19,7 @@
 	{{-- style css --}}
 	<link rel="stylesheet" type="text/css" href="{{ asset("css/styles.css") }}">
 	{{-- admin css --}}
-	<link rel="stylesheet" type="text/css" href="{{ asset("css/admin.css") }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset("css/users.css") }}">
 	{{-- loader css --}}
 	<link rel="stylesheet" type="text/css" href="{{ asset("css/loader.css") }}">
 </head>
@@ -37,6 +37,7 @@
     <script type="text/javascript" src="{{ asset("js/mdb.min.js") }}"></script>
  	<script type="text/javascript" src="{{ asset("js/bootstrap.bundle.min.js") }}" ></script>
  	<script type="text/javascript" src="{{ asset("js/popper.min.js") }}"></script>
+
  	<script type="text/javascript" src="{{ asset("js/axios.min.js") }}"></script>
  	<script type="text/javascript" src="{{ asset("js/jquery-ui.js") }}"></script>
  	<script type="text/javascript" src="{{ asset("js/sweetalert2.all.min.js") }}"></script>
@@ -51,7 +52,7 @@
 	<script type="text/javascript" src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
 	<script src="{{ asset("js/scripts.js") }}" type="text/javascript"></script>
 	<script src="{{ asset("js/html2pdf.bundle.min.js") }}" type="text/javascript"></script>
-	<script src="{{ asset("js/admin.js") }}" type="text/javascript"></script>
+	<script src="{{ asset("js/users.js") }}" type="text/javascript"></script>
 	@yield("script")
 </body>
 </html>

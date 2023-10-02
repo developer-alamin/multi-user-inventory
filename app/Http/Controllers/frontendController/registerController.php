@@ -31,6 +31,7 @@ class registerController extends Controller {
 			"phone" => $request->Rphone,
 			"shop" => $request->RshopName,
 			"village" => $request->Rvillage,
+			"status" => 0,
 			"photo" => $serverUpload,
 			"password" => Hash::make($request->Rpassword, ['rounds' => 10]),
 		]);

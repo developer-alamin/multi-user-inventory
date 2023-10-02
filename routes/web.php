@@ -12,4 +12,5 @@ Route::group(['prefix' => '/'], function () {
 
 	Route::get("/register", [registerController::class, "register"])->name("web.register");
 	Route::post("/userStore", [registerController::class, "userStore"])->name("web.userStore");
+
 });

@@ -10910,12 +10910,10 @@ body {
     transition: margin 0.15s ease-in-out;
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
-    transform: translateX(-225px);
+    transform: translateX(-153px);
   } 
-
-
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content {
-    margin-left: -225px;
+    margin-left: -153px;
   }
   
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before {

@@ -16,6 +16,7 @@ return new class extends Migration {
 			$table->integer("phone");
 			$table->char("shop");
 			$table->char("village");
+			$table->integer("status");
 			$table->string("photo");
 			$table->string("password", 100);
 			$table->timestamps();

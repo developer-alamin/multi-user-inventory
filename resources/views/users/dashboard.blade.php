@@ -2,7 +2,6 @@
 @section("title","Admin Dashboard")
 @section("content")
 <div class="dashboardContent">
-
 	<div class="row">
 		<div class="col-10 m-auto col-sm-9 col-md-4 col-lg-3 col-xl-3">
 			<div class="card flex-row">

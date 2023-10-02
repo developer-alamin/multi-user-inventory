@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Users\user;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Session;
 
 class loginController extends Controller {
 	function login() {
@@ -16,11 +17,18 @@ class loginController extends Controller {
 		$users = user::where("email", $userEmail)->first();
 		if (isset($users)) {
 			if (Hash::check($userPass, $users->password)) {
-				$request->Session()->put('userId', $users->id);
-				return response()->json([
-					'status' => 200,
-					'success' => "Success",
-				]);
+				if (!($users->status == 0 || $users->status == null)) {
+					$request->Session()->put('userId', $users->id);
+					return response()->json([
+						'status' => 200,
+						'success' => "Success",
+					]);
+				} else {
+					return response()->json([
+						'status' => 200,
+						'faild' => "Your Account Not Approved !",
+					]);
+				}
 			} else {
 				return response()->json([
 					'status' => 200,

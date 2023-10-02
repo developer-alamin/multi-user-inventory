@@ -1,11 +1,3 @@
-toastr.options = {
-    "positionClass": "toast-bottom-center"
-}
-toastr.options.extendedTimeOut = 1500; //1000;
-toastr.options.timeOut = 1500;
-toastr.options.fadeOut = 250;
-toastr.options.fadeIn = 250;
-
 var loader = "<span class='spinner-border text-warning'></span>";
 var loaderSpen = " <span class='spinner-border spinner-border-sm'></span>";
 
@@ -26,3 +18,5 @@ function addClass(ele, action) {
 function removeClass(ele, action) {
     document.querySelector(ele).classList.remove(action);
 }
+
+

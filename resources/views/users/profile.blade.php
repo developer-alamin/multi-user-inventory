@@ -98,7 +98,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-outline-danger cencel" data-mdb-dismiss="modal">Cencel</button>
-					<button type="submit" class="btn  create userProUpBtn">Print</button>
+					<button type="submit" class="btn  create userProUpBtn">Update</button>
 				</div>
 			</form>
 		</div><!-- /.modal-content -->

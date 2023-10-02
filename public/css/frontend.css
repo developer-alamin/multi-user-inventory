@@ -9,6 +9,7 @@ header#header {
     top: 0;
     margin: auto;
     padding: 10px;
+    z-index: 111;
 }
 div.collumnLeft nav {
     display: flex;
@@ -41,7 +42,9 @@ div.loginRow {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 79vh;
+    position: relative;
+    z-index: 000;
 }
 
 div.loginRow  div div.card {
@@ -70,7 +73,7 @@ div.registerContent {
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 99vh;
+    height: 79vh
 }
 label{
     font-weight: bold;
@@ -90,3 +93,62 @@ div.registerContent div div.card div.card-body div.cardHeadingRow img {
     margin-left: auto;
 }
 /*register page css start form here*/
+/*admin page css start form here*/
+div.adminLoginContent {
+    height: 77vh;
+}
+
+div.adminLoginContent div.row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+div.adminLoginContent div.row div div.card {
+    box-shadow: inset -1px -1px 11px 6px #2bb919;
+}
+/*admin page css start form here*/
+/*forget page css start form here*/
+div.forgetRow {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+
+}
+.card {
+    box-shadow: inset 0px -1px 8px 4px #417ae3;
+}
+/*forget page css end form here*/
+/*verify otp page start form here*/
+div.verifyOtpDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+}
+/*verify otp page end form here*/
+/*reset password page css start */
+div.resetPassRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+}
+.cardImgTitle img {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    border-radius: 100%;
+}
+
+.cardImgTitle {
+    display: flex;
+    align-items: center;
+}
+/*reset password page css end */

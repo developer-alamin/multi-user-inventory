@@ -17,6 +17,14 @@
      <link rel="stylesheet" type="text/css" href="{{ asset("css/toastrustom.css") }}">
 </head>
 <body>
+
+  <div class="ProgressContent d-none">
+    <div class="progress-bar">
+      <div class="progress-bar-value"></div>
+    </div>
+  </div>
+  <div class="fullScreenDiv d-none"></div>
+
   @includeif("frontend.layout.header")
 	@yield("content")
 
